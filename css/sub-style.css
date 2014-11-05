@@ -104,7 +104,7 @@ nav a:hover i.fa{
 .dropdown-menu:before {
   position: absolute;
   top: -10px;
-  left: 29px;
+  right: 28px;
   display: inline-block;
   border-right: 10px solid transparent;
   border-bottom: 10px solid #ccc;
@@ -116,7 +116,7 @@ nav a:hover i.fa{
 .dropdown-menu:after {
   position: absolute;
   top: -9px;
-  left: 30px;
+  right: 28px;
   display: inline-block;
   border-right: 9px solid transparent;
   border-bottom: 9px solid #ffffff;
@@ -133,6 +133,7 @@ nav a:hover i.fa{
 
 .navbar-nav>li>.dropdown-menu {
 	border-radius:10px;
+	left: -80px;
 }
 
 /**** Dashboard ****/
@@ -155,8 +156,8 @@ nav a:hover i.fa{
 
 }
 .sub-dashboard ul li i{
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 .sub-dashboard ul{
 	margin-top: 20px;
@@ -214,4 +215,20 @@ footer {
 	line-height: 17px;
 	margin: 0;
 
+}
+
+.container-adjustment{
+	padding-right: 0px; 
+	padding-left: 0px;
+	overflow: hidden; 
+}
+
+.row{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.fix-width{
+	width: 1024px;
+	margin: 0 auto;
 }

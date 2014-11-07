@@ -76,3 +76,268 @@
 .brings-text{
 	font-weight: normal;
 }
+
+.new-request-row{
+	padding: 0 50px;
+}
+
+.new-request-container{
+	border: 1px solid #DDD;
+	
+	border-radius: 5px;
+	padding: 0;
+	margin: 75px 0px 80px;
+}
+
+.new-request-list-title-label{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.new-request-list-title{
+	
+	border-bottom: 1px solid #DDD;
+	padding: 20px 15px;
+}
+
+.new-request-list-title2{
+	background:#F5F5F5;
+}
+.links-container{
+	padding: 20px 0 13px 60px;
+}
+
+.new-request-list li{
+	cursor: pointer;
+}
+
+.new-request-list li.active{
+	font-weight: bold;
+}
+
+.add-cancel-list{
+	line-height: 27px;
+}
+
+.add-cancel-list a,
+.tablelink a{
+	color: #313131;
+
+	-webkit-transition: all .5s ease-in-out ;
+    -moz-transition: all .5s ease-in-out ;
+    -o-transition: all .5s ease-in-out ;
+    transition: all .5s ease-in-out;
+}
+
+.add-cancel-list a:hover,
+.tablelink a:hover{
+	text-decoration: none;
+	color: #0C0C0C;
+}
+
+.request-form-table{
+	width: 475px;
+	margin: 30px 0 100px;	
+}
+
+.request-form-table2{
+	width: 500px;
+	display: none;
+}	
+
+.request-form-container{
+	border-bottom: none;
+}
+
+.request-form-table tr td{
+	padding: 15px 0;
+}
+
+.request-textarea{
+	resize:none;
+}
+
+.button-holder{
+	float: right;
+}
+
+.button-next{
+	background:#333333;
+	padding: 10px 50px;
+	color: white;
+	margin: 0 30px 20px 0;
+	
+	-webkit-transition: all .3s ease-in-out ;
+    -moz-transition: all .3s ease-in-out ;
+    -o-transition: all .3s ease-in-out ;
+    transition: all .3s ease-in-out;
+}
+
+.button-next:hover{
+	background:#4e4e4e;
+	color: white;
+
+}
+
+.asterisk{
+	color:red;
+	margin: 0 5px 0 0;
+}
+
+.button-send{
+	padding: 10px 20px;
+}
+
+.upload-request{
+	width: 230px;
+	display: inline!important;
+}
+
+.display-none{
+	display: none;
+}
+
+.modal-container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	
+	 display: none; 
+}
+
+.modal-container-overlay{
+	background: rgba(0, 0, 0, 0.64);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+
+	display: none; 
+}	
+
+.modal-holder{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 140px;
+}
+
+.modal-custom{
+	width: 100%;
+	background: white;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	height: 150px;
+	margin: auto 0;
+}
+
+.container-adjustment2{
+	position: relative;
+	width: 100%;
+}
+
+.modal-message{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.modal-buttons{
+	display: inline-block;
+	margin: 0 0 0 20px;
+}
+
+.btn-modal-options{
+	padding: 10px 50px;
+	background:#b469b4;
+	color: white;
+	margin: 0 10px;
+
+	-webkit-transition: all .3s ease-in-out ;
+    -moz-transition: all .3s ease-in-out ;
+    -o-transition: all .3s ease-in-out ;
+    transition: all .3s ease-in-out;
+
+}
+
+.btn-modal-options:hover{
+	background:#a661a6;
+	color: white;
+}
+
+.blur{
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+
+.readOnly{
+	color:#9d9d9d;
+}
+
+.searchHolder{
+	float: right;
+	width: 200px;
+	margin: 0 49px 0 0;
+}
+
+.no-padding-adjust{
+	padding: 0;
+}
+
+.data-table-padding{
+	padding: 20px 40px 150px;
+}
+
+.data-table-padding2{
+	padding: 20px 10px 150px;
+}
+ 
+.dataTables_filter{
+	float: right;
+	text-align: right;
+	margin: 0px 12px 10px;
+} 
+
+.dataTables_filter input{
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.filter-list{
+	display: inline;
+}
+
+.filter-list li{
+	padding: 0 20px;
+}
+
+.filter-list li select {
+	width: 160px;
+}
+
+.line-select{
+	width: initial;
+	display: inline;
+}
+
+.button-filter{
+	padding: 6px 18px;
+}

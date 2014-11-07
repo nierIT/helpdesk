@@ -1,0 +1,113 @@
+(function($) {
+
+	$.fn.requestForm = function(){
+
+		var element=this;
+
+		var elementClass = '.'+element.selector;
+
+		var elementToShow = '#'+element.selector + '-link-';
+
+		var buttonToShow = '#'+element.selector + '-button-';
+
+		var elementClassAll = elementClass + '-class';
+
+		$(elementClass+' li').each(function(){
+
+			$(this).click(function(){
+
+				var datalink = $(this).attr('data-link');
+
+				$(elementClass+' li').removeClass('active');
+
+				$(this).addClass('active');
+
+				$(elementClassAll).fadeOut();
+
+				$(elementToShow+datalink).fadeIn();
+				
+				$(buttonToShow+datalink).fadeIn();
+
+			});
+
+		});
+
+	}
+
+	$.fn.modalCustom = function(){
+
+		var element=this;
+
+		var elementClass = '.'+element.selector;
+
+		$(elementClass).click(function(){
+
+			var datamodallink = $(this).attr('data-modal-link');
+
+			$('.container-fluid').addClass('blur');
+
+			$('#modal-link-'+datamodallink).fadeIn(200);
+
+			$('.modal-container-overlay').show();
+
+		});
+
+		$('.modal-container-overlay,.close-modal').click(function(){
+
+			$('.modal-container').fadeOut(200);
+
+			$('.modal-container-overlay').hide();
+
+			$('.container-fluid').removeClass('blur');
+
+		});
+		
+	}
+
+	$.fn.nextButtonFunction = function(){
+
+		var element=this;
+
+		var elementID = '#'+element.selector;
+
+		var datalink = $(elementID).attr('data-link');
+
+		
+
+		$(elementID).click(function(){
+
+			var check = false;
+
+			$('.checkThis').each(function(){
+
+				if($(this).val()==""){
+
+					check = true;
+
+				}
+
+			});
+
+			if(check == false){
+
+				$('.new-request-list-class').fadeOut(function(){
+
+					$('#new-request-list-link-'+datalink).fadeIn();
+
+				});
+
+
+				$('.active').removeClass().addClass('readOnly');
+
+				$("#request2").removeClass().addClass('active');
+
+			}
+
+			
+
+			
+		});
+
+	}
+
+})(jQuery);

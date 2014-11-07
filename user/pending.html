@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Help Desk</title>
+	
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/jquery.dataTables.min.css">
+
+	<!-- Custom Bootstrap -->
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/sub-style.css">
+
+</head>
+<body>
+
+<div class="container-fluid container-adjustment container-adjustment2">
+
+	
+	<!-- Navigation -->
+    <nav class="navbar navbar-inverse" role="navigation">
+
+    	<div class="fix-width">
+      <!-- <div class="container"> -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+			<img src="../images/helpdesk-logo.png" alt="Help Desk we are ready to help">
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav pull-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle main-circle" data-toggle="dropdown"><span class="circle"><i class="hover-animate fa fa-user"></i></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#" class="hover-animate">My Profile</a></li>
+                <li><a href="#" class="hover-animate">Settings</a></li>
+                <li><a href="#" class="hover-animate">Logout</a></li>
+       
+              </ul>
+            </li>
+          </ul>
+        </div>
+        </div>
+      <!-- </div> -->
+    </nav>
+
+	<!-- Dashboard -->
+	<section class="dashboard">
+
+		<div class="fix-width">
+	    <!-- <div class="container"> -->
+		    <div class="row sub-dashboard">
+				<ul class="col-md-12 list-inline text-center">
+					<li>
+						<a href="new_request.html">
+							<p><i class="icons fa fa-briefcase"></i></p>
+							<span class="text-icons">New Request</span>
+						</a>
+					</li>
+					<li>
+						<a href="pending.html">
+							<p><i class="icons fa fa-list-alt"></i></p>
+							<span class="text-icons">Pending</span>
+						</a>
+					</li>
+					<li>
+						<a href="waiting.html">
+							<p><i class="icons fa fa-tasks"></i></p>
+							<span class="text-icons">Waiting For Approval</span>
+						</a>
+					</li>
+					<li>
+						<a href="request_list.html">
+							<p><i class="icons fa fa-list-ul"></i></p>
+							<span class="text-icons">Request List</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p><i class="icons fa fa-envelope"></i></p>
+							<span class="text-icons">Message</span>
+						</a>
+					</li>
+				</ul>
+		    </div>
+		   </div>
+	    <!-- </div>	 -->
+	</section>
+
+
+    <!-- Content -->
+    <section class="main-content">
+
+    	<div class="fix-width">
+		<!-- <div class="container"> -->
+	    	<div class="row new-request-row no-padding-adjust">
+	    		
+	    		<div class="col-xs-12 new-request-container">
+					
+					<div class="col-xs-12 new-request-list-title new-request-list-title2">
+						
+						<div class="col-xs-10 new-request-list-title-label">
+							
+							Pending List
+
+						</div>
+
+						<div class="col-xs-2 add-cancel-list">
+							
+							<a href="new_request.html"><i class="fa fa-plus"></i> Add Request</a>
+							
+						</div>
+
+
+					</div>
+
+				<!--  <div class="col-xs-12 links-container">
+									
+										<span class="searchHolder">
+								
+											<input type="text" class='form-control' placeholder='Search'>
+								
+										</span>
+								
+								</div>  -->
+
+					<div class="col-xs-12 new-request-list-title links-container request-form-container data-table-padding">
+						
+						<table id="example" class="stripe" cellspacing="0" width="100%">
+						    <thead>
+						        <tr>
+						            <th>Request ID</th>
+						            <th>Request Type</th>
+						            <th>Requester</th>
+						            <th>Assigned to</th>
+						            <th>SLA</th>
+						            <th>Exp. of Request</th>
+						            <th>Status</th>
+						            <th>&nbsp;</th>
+						        </tr>
+						    </thead>
+						 
+						    <tbody>
+						        <tr>
+
+						            <td>1</td>
+						            <td>Reset Password</td>
+						            <td>Thea Benene</td>
+						            <td>Unassigned</td>
+						            <td>5 hrs</td>
+						            <td>3/21/2014</td>
+						            <td>Pending</td>
+						            <td class='tablelink'>
+						            	
+						            	<a href="#">Message</a> | <a href="#">Details</a>
+
+						            </td>
+
+						        </tr>
+
+						        <tr>
+
+						            <td>2</td>
+						            <td>Reset Password</td>
+						            <td>Thea Benene</td>
+						            <td>mjojo@sample.com</td>
+						            <td>3 hrs</td>
+						            <td>4/21/2014</td>
+						            <td>Pending</td>
+						            <td class='tablelink'>
+						            	
+						            	<a href="#">Message</a> | <a href="#">Details</a>
+
+						            </td>
+
+						        </tr>
+
+						    </tbody>
+
+						</table>
+
+					</div>
+
+	    		</div>
+
+	    	</div>
+
+	    </div>
+
+	  
+	   <!--  </div> -->
+    </section>
+    
+  	 
+	<footer>
+		<div class="fix-width">
+		<!-- <div class="container"> -->
+			<div class="row">
+				<div class="col-xs-7 sub-footer">
+					<p>Copyright 2009 Ortigas &</p>
+					<p>Company, Limited Partnership. All</p>
+					<p>Right Reserved</p>
+				</div>
+				<div class="col-xs-5 address">
+					<p>Contact: 9th Floor, Ortigas Building Avenue, Pasig City 1600 Philippines</p>
+					<p>Phone: (632) 631 1231 Telefax: (632) 631 6517</p>
+					<p>Email: info@ortigas.com.ph</p>
+				</div>
+			</div>
+		<!-- </div> -->
+		</div>
+	</footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/jquery.dataTables.min.js"></script>
+
+	<script>
+
+		$(document).ready(function(e){
+
+			$('show-modal1').modalCustom();
+
+			$("next-button").nextButtonFunction();
+
+			$('#example').dataTable({
+
+				"aoColumnDefs": [
+			          { 'bSortable': false, 'aTargets': [ -1,-2, 2 ] }
+			       ]
+			});
+
+		});
+
+	</script>
+   
+   </div>
+
+</body>
+</html>

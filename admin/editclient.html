@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Help Desk | Edit Client</title>
+	
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.min.css">
+
+	<!-- Custom Bootstrap -->
+	<link rel="stylesheet" href="../css/sub-style.css">
+
+</head>
+<body>
+
+<div class="container-fluid container-adjustment">
+
+	
+	<!-- Navigation -->
+    <nav class="navbar navbar-inverse" role="navigation">
+
+    	<div class="fix-width">
+      <!-- <div class="container"> -->
+        <div class="navbar-header">
+         
+          <a class="navbar-brand" href="#">
+			<img src="../images/helpdesk-logo.png" alt="Help Desk we are ready to help">
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav pull-right">
+            <li class="active hero"><a href="#">Dashboard</a></li>
+
+            <li><a class="hover-animate" href="#about">SLA</a></li>
+            <li><a class="hover-animate" href="#contact">Request</a></li>
+            <li><a class="hover-animate" href="#contact">Group</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle main-circle" data-toggle="dropdown"><span class="circle"><i class="hover-animate fa fa-user"></i></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#" class="hover-animate">My Profile</a></li>
+                <li><a href="#" class="hover-animate">Settings</a></li>
+                <li><a href="#" class="hover-animate">Logout</a></li>
+       
+              </ul>
+            </li>
+          </ul>
+        </div>
+        </div>
+      <!-- </div> -->
+    </nav>
+
+	<!-- Dashboard -->
+	<section class="dashboard">
+
+		<div class="fix-width">
+	    <!-- <div class="container"> -->
+		    <div class="row sub-dashboard">
+				<ul class="col-md-12 list-inline text-center">
+					<li>
+						<a href="#">
+							<p><i class="icons fa fa-plus-circle"></i></p>
+							<span class="text-icons">Create New User</span>
+
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p><i class="icons fa fa-user-md"></i></p>
+							<span class="text-icons">Manage User</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p><i class="icons fa fa-briefcase"></i></p>
+							<span class="text-icons">Client List</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p><i class="icons fa fa-list-alt"></i></p>
+							<span class="text-icons">Request Overdue</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p><i class="icons fa fa-tasks"></i></p>
+							<span class="text-icons">Request Due Today</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p><i class="icons fa fa-list-ul"></i></p>
+							<span class="text-icons">On - Going Request</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p><i class="icons fa fa-envelope"></i></p>
+							<span class="text-icons">Message</span>
+						</a>
+					</li>
+				</ul>
+		    </div>
+		   </div>
+	    <!-- </div>	 -->
+	</section>
+
+
+    <!-- Content -->
+    <section class="main-content">
+
+    	<div class="fix-width">
+		<!-- <div class="container"> -->
+	    	<div class="row">
+	    		<div>
+					<ol class="breadcrumb">
+					  <li><a href="#">Dashboard</a></li>
+					  <li><a href="#">Client List</a></li>
+					  <li><a href="#">View Client</a></li>
+					  <li class="active">Edit Client</li>
+					</ol>
+	    		</div>
+	    		<div class="row">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+					  		<h2 class="col-xs-7">Create New User</h2>
+					  		<span class="col-xs-5 text-right cancel-btm"><a href="#">Cancel</a></span>
+					  	</div>
+					 
+					  	<div class="panel-body">
+							<form class="form-horizontal " role="form">
+								<div class="form-group">
+									<label for="inputEmail3" class="col-xs-2 control-label">Company Name:</label>
+									<div class="col-xs-4">
+										<input type="text" class="form-control" id="companyName" value="Yondu">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputPassword3" class="col-xs-2 control-label">Contact Person:</label>
+									<div class="col-xs-4">
+										<input type="text" class="form-control" id="contactPerson" value="Juan M. Cruz">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputPassword3" class="col-xs-2 control-label">Email Address:</label>
+									<div class="col-xs-4">
+										<input type="text" class="form-control" id="emailAddress" value="jcruz@yondu.ph">
+									</div>
+								</div>
+							
+
+								<!-- Multiple Radios -->
+								<div class="form-group">
+									<label class="col-xs-2 control-label" for="radios">Status:</label>
+									<div class="col-xs-8">
+										<label class="radio-inline">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Active
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Lock-out
+										</label>
+									</div>
+								</div>
+											<!-- Multiple Radios -->
+													 
+								<!-- Button -->
+								<div class="form-group">
+								  	<label class="col-xs-2 control-label sr-only" for="singlebutton">Single Button</label>
+								  	<div class="col-xs-4">
+								    	<button id="singlebutton" name="singlebutton" class="btn btn-primary">Save</button>
+								  	</div>
+								</div>
+							</form>
+					  	</div>
+					</div>
+	    		</div>
+	    	</div>
+	    </div>
+	   <!--  </div> -->
+    </section>
+    
+
+	<footer>
+		<div class="fix-width">
+		<!-- <div class="container"> -->
+			<div class="row">
+				<div class="col-md-7 sub-footer">
+					<p>Copyright 2009 Ortigas &</p>
+					<p>Company, Limited Partnership. All</p>
+					<p>Right Reserved</p>
+				</div>
+				<div class="col-md-5 address">
+					<p>Contact: 9th Floor, Ortigas Building Avenue, Pasig City 1600 Philippines</p>
+					<p>Phone: (632) 631 1231 Telefax: (632) 631 6517</p>
+					<p>Email: info@ortigas.com.ph</p>
+				</div>
+			</div>
+		<!-- </div> -->
+		</div>
+	</footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+   </div>
+</body>
+</html>

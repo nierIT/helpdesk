@@ -209,6 +209,7 @@ nav a:hover i.fa{
 
 
 /**** Footer ***/
+
 footer {
 	font-size: 13px;
 	color: #ccc;
@@ -231,7 +232,6 @@ footer {
 	padding-right: 0px; 
 	padding-left: 0px;
 	overflow: hidden; 
-
 }
 
 .row{
@@ -242,4 +242,113 @@ footer {
 .fix-width{
 	width: 1024px;
 	margin: 0 auto;
+}
+
+
+/**** Add Client ***/
+
+.breadcrumb {
+	margin-top: 20px;
+	background-color: #fff;
+
+}
+
+.breadcrumb a{
+	color: #333;
+}
+.breadcrumb > li + li:before {
+    color: #333;
+    content: "> ";
+}
+.breadcrumb>li:last-child{
+	color: #590259;
+
+}
+
+.panel {
+	margin-bottom: 100px;
+	border-radius: 5px;
+}
+.panel-heading {
+	height: 80px;
+}
+.panel-heading h2{
+	line-height: 20px;
+	font-size: 25px;
+}
+
+.cancel-btm {
+	margin-top: 23px;
+	font-size: 13px;
+}
+
+.cancel-btm {
+	margin-top: 23px;
+
+}
+
+.cancel-btm a{
+
+	font-size: 13px;
+	color: #333;
+}
+
+.cancel-btm a:hover{
+	text-decoration: none;
+	color: #590259;
+}
+
+.form-group {
+	margin-bottom: 30px;
+}
+.panel-body {
+	margin-left: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.form-control {
+	border-radius: 0;
+}
+.form-control:focus {
+	border-color: #333;
+}
+
+.radio-inline {
+	margin-right: 30px
+}
+
+.btn-primary {
+	background-color: #333;
+	
+}
+
+.btn-primary:hover {
+	background-color: #555;
+	
+
+}
+
+.btn {
+	padding-left: 30px;
+	padding-right: 30px;
+	border:none;
+	border-radius: 0;
+}
+
+.control-label {
+	text-align: left !important;
+}
+
+.form-control option {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+}
+
+
+.well {
+	color: #333;
 }

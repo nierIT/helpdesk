@@ -131,10 +131,11 @@
 					  	</div>
 					 
                         <div>
-                            <ul class="list-group setting-list">
+                            <ul class="list-group setting-list make-relative">
                               
-                              <li class="list-group-item main-list-group-item">
-                                    <div class="form-group">
+                              <li class="list-group-item main-list-group-item main-list-custom">
+
+                                    <div class="form-group main-password-container">
                                        
                                        <div>
                                            
@@ -150,25 +151,26 @@
                                        </div>
                                        
                                     </div>
-                              </li>
-                              <li class="list-group-item main-list-group-item">
-                                    <div class="form-group sub-setting-list">
+                                    
+
+                                    <div class="clearfix"></div>
+                                    <div class="form-group sub-setting-list password-show">
                                        
                                        <div>
                                             <div class="row">
-                                                <label for="inputPassword3" class="col-xs-2 control-label">New Password:</label>
+                                                <label for="inputPassword3" class="col-xs-3 control-label">New Password:</label>
                                                 <div class="col-xs-4 sub-setting-input">
                                                     <input type="password" class="form-control" id="password" value="P@ssw0rd">
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <label for="inputPassword3" class="col-xs-2  control-label">Re - Type Password:</label>
+                                                <label for="inputPassword3" class="col-xs-3  control-label">Re - Type Password:</label>
                                                 <div class="col-xs-4">
                                                     <input type="password" class="form-control" id="password" value="P@ssw0rd" >
                                                 </div>
-                                                <div class="col-xs-6 setting-list-btn">
-                                                    <button id="cancelPassword" name="singlebutton" class="btn btn-primary" >Cancel</button>
-                                                    <button id="savePassword" name="singlebutton" class="btn btn-primary" >Save Password</button>
+                                                <div class="col-xs-5 setting-list-btn">
+                                                    <button id="cancelPassword" name="singlebutton" class="btn btn-primary change-passwords" >Cancel</button>
+                                                    <button id="savePassword" name="singlebutton" class="btn btn-primary change-passwords" >Save Password</button>
                                                 </div>  
                                                 
                                             </div>
@@ -176,6 +178,7 @@
                                        </div>
                                        
                                     </div>
+
                               </li>
                               
                               <li class="list-group-item main-list-group-item">
@@ -245,24 +248,17 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
 
-<script type="text/javascript">
-$("#changePassword,#emailButton,#mobileNumber").click(function () {
-     
-       var id = $(this).attr('id');
-        
-       var customClass = "."+id+"-form";
-  
-        var attr = $(customClass).attr('disabled');
-    
-        if (typeof attr !== typeof undefined && attr !== false) {
-             $(customClass).removeAttr("disabled");
-            
-        }else{
-            $(customClass).attr("disabled",'true');
-        }
-    });
-</script>
+    <script type="text/javascript">
+
+      $(document).ready(function(e){
+
+          $().changePasswordDropdown();
+
+      });
+
+    </script>
 
    </div>
 </body>

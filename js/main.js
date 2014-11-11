@@ -110,4 +110,55 @@
 
 	}
 
+	$("#emailButton,#mobileNumber").click(function () {
+     
+       var id = $(this).attr('id');
+        
+       var customClass = "."+id+"-form";
+  
+        var attr = $(customClass).attr('disabled');
+    
+        if (typeof attr !== typeof undefined && attr !== false) {
+            
+             $(customClass).removeAttr("disabled");
+            
+        }else{
+
+            $(customClass).attr("disabled",'true');
+        
+        }
+
+    });
+
+	$.fn.changePasswordDropdown = function(){
+
+		$('#changePassword').click(function(){
+
+			$('.main-password-container').fadeOut(function(){
+
+				$('.main-list-custom').addClass("list-height-adjust");
+
+				$('.password-show').addClass("showList");
+
+			});
+			
+		});
+
+		$('#cancelPassword').click(function(){
+
+			$('.password-show').removeClass("showList");
+
+			$('.main-list-custom').removeClass("list-height-adjust");
+
+			setTimeout(function(){
+
+				$('.main-password-container').fadeIn();
+
+			},400);
+			
+
+		});
+
+	}
+
 })(jQuery);

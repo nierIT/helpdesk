@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Help Desk | Add Client</title>
+	<title>Help Desk | Request List</title>
 	
 
 	<!-- Bootstrap -->
@@ -118,59 +118,130 @@
 	    	<div class="row">
 	    		<div>
 					<ol class="breadcrumb">
-					  <li><a href="#">Dashboard</a></li>
-					  <li class="active">Client List</li>
+					  <li><a href="#">Request</a></li>
+					  <li class="active">Request List</li>
 					</ol>
 	    		</div>
 	    		<div class="row">
 					<div class="panel panel-default panel-dafault2">
 						<div class="panel-heading">
-					  		<h2 class="col-xs-7">Client List</h2>
+					  		<h2 class="col-xs-7">Request List</h2>
 					  		<span class="col-xs-5 text-right cancel-btm"><a href="#" class='addbtn'><i class="fa fa-plus-circle"></i> Add</a></span>
 					  	</div>
 					 	
-					 	<div class="col-xs-12 links-container links-container2 links-container3">
+					 	<div class="col-xs-12 links-container links-container2 links-container3 links-container4">
 									
 							<form>
-								
-								<span class="filter-label">
 									
-									Filter By:
 
-								</span>
-								
-								<ul class="list-inline filter-list">
+								<div class="tableOptionsHolder tableOptionsHolder2">
+									
+									<ul class="list-inline filter-list">
 
-									<li>
+										<li>
+
+											Tech Support:
+
+											<select name="" id="" class='form-control line-select'>
+												
+												<option value="">Select</option>
+
+											</select>
+
+										</li>
 										
-										<select name="" id="" class='form-control line-select'>
+										<li>
+
+											Group Email:
+
+											<select name="" id="" class='form-control line-select'>
+												
+												<option value="">Select</option>
+
+											</select>
+
+										</li>
+
+										<li>
 											
-											<option value="">All</option>
+											<button type="button" class="btn btn-primary button-filter btn-black">Assign</button>
 
-										</select>
+										</li>
 
-									</li>
+										<li>
+											
+											<button type="button" class="btn btn-primary button-filter btn-black btn-refresh">Refresh</button>
+
+										</li>
+
+									</ul>
+
+								</div>
+								<div class="tableOptionsHolder tableOptionsHolder2 tableOptionsHolder22">
 									
-									<li>
+									<ul class="list-inline filter-list">
+
+										<li>
+
+											Filter by:
+
+											<select name="" id="" class='form-control line-select filter-select'>
+												
+												<option value="">Select</option>
+
+											</select>
+
+										</li>
 										
-										<button type="button" class="btn btn-success button-filter">Filter</button>
+										<li>
 
-									</li>
+											Group Email:
 
-								</ul>
+											<select name="" id="" class='form-control line-select'>
+												
+												<option value="">Select</option>
 
+											</select>
+
+										</li>
+
+										<li>
+
+											Status:
+
+											<select name="" id="" class='form-control line-select'>
+												
+												<option value="">Select</option>
+
+											</select>
+
+										</li>
+
+										<li>
+											
+											<button type="button" class="btn btn-success button-filter">Filter</button>
+
+										</li>
+
+									</ul>
+
+								</div>
+								
 							</form>
 					
 						</div>
 
-					  	<div class="panel-body panel-body-adjust">
+					  	<div class="panel-body panel-body-adjust panel-body-adjust2">
 							<form class="form-horizontal " role="form">
-								<table id="example" class="stripe" cellspacing="0" width="100%">
+								<table id="example" class="stripe table-smallfont" cellspacing="0" width="100%">
 								    <thead>
 								        <tr>
-								            <th>Client Name</th>
-								            <th>Contact Person</th>
-								            <th>Email</th>
+								            <th>Request ID</th>
+								            <th>Request Type</th>
+								            <th>Requester</th>
+								            <th>Assigned to</th>
+								            <th>SLA</th>
+								            <th>Exp. of Request</th>
 								            <th>Status</th>
 								            <th>&nbsp;</th>
 								        </tr>
@@ -180,13 +251,33 @@
 
 								        <tr>
 
-								            <td>Globe Telecom</td>
-								            <td>Contact Person</td>
-								            <td>jdcruz@globe.com.ph</td>
-								            <td>Active</td>
+								            <td>1</td>
+								            <td>Reset Password</td>
+								            <td>Ivan Cruz</td>
+								            <td>Unassigned</td>
+								            <td>2hrs</td>
+								            <td>3/21/2014</td>
+								            <td>Open</td>
 								            <td class='tablelink'>
 								            	
-								            	<a href="#">View</a> | <a href="#">Edit</a> | <a href="#">Delete</a>
+								            	<a href="#">Message</a> | <a href="#">Details</a> | <a href="#">Delete</a>
+
+								            </td>
+
+								        </tr>
+										
+										 <tr>
+
+								            <td>2</td>
+								            <td>Reset Password</td>
+								            <td>Jay Co</td>
+								            <td>jco@globe.com.ph</td>
+								            <td>4hrs</td>
+								            <td>3/21/2014</td>
+								            <td>Open</td>
+								            <td class='tablelink'>
+								            	
+								            	<a href="#">Message</a> | <a href="#">Details</a> | <a href="#">Delete</a>
 
 								            </td>
 
@@ -194,31 +285,20 @@
 
 								        <tr>
 
-								            <td>Yondu</td>
-								            <td>Contact Person</td>
-								            <td>jdcruz@globe.com.ph</td>
-								            <td>Active</td>
+								            <td>3</td>
+								            <td>Reset Password</td>
+								            <td>Carl Roy</td>
+								            <td>croy@globe.com.ph</td>
+								            <td>5hrs</td>
+								            <td>3/21/2014</td>
+								            <td>Open</td>
 								            <td class='tablelink'>
 								            	
-								            	<a href="#">View</a> | <a href="#">Edit</a> | <a href="#">Delete</a>
+								            	<a href="#">Message</a> | <a href="#">Details</a> | <a href="#">Delete</a>
 
 								            </td>
 
-								        </tr>
-										
-										<tr>
-
-								            <td>Globe Telecom</td>
-								            <td>Contact Person</td>
-								            <td>jdcruz@globe.com.ph</td>
-								            <td>Active</td>
-								            <td class='tablelink'>
-								            	
-								            	<a href="#">View</a> | <a href="#">Edit</a> | <a href="#">Delete</a>
-
-								            </td>
-
-								        </tr>
+								        </tr> 
 
 								    </tbody>
 
@@ -251,35 +331,37 @@
 		<!-- </div> -->
 		</div>
 	</footer>
+
+	 </div>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../js/jquery-1.11.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery.dataTables.min.js"></script>
 	
-
 	<script>
 
 		$(document).ready(function(e){
 
-
 			$('#example').dataTable({
-
+		   
 				"aoColumnDefs": [
 			          { 'bSortable': false, 'aTargets': [ -1] }
 			       ],
-			    "bPaginate": true,
+
+		       	"bPaginate": true,
 			    "bLengthChange": false,
 			    "bFilter": true,
 			    "bInfo": true,
-			    "bAutoWidth": true
+			    "bAutoWidth": true 
 			});
+
 
 		});
 
 	</script>
 
-   </div>
 </body>
 </html>

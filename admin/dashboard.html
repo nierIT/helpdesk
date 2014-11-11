@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Help Desk | Add Client</title>
+	<title>Help Desk | Dashboard</title>
 	
 
 	<!-- Bootstrap -->
@@ -13,6 +13,7 @@
 	<!-- Custom Bootstrap -->
 	<link rel="stylesheet" href="../css/sub-style.css">
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/jquery-ui.min.css">
 
 </head>
 <body>
@@ -116,36 +117,37 @@
     	<div class="fix-width">
 		<!-- <div class="container"> -->
 	    	<div class="row">
-	    		<div>
-					<ol class="breadcrumb">
-					  <li><a href="#">Dashboard</a></li>
-					  <li class="active">Client List</li>
-					</ol>
-	    		</div>
-	    		<div class="row">
-					<div class="panel panel-default panel-dafault2">
+	    		<div class="row row-adjust">
+					<div class="panel panel-default panel-dafault2 panel-default3">
 						<div class="panel-heading">
-					  		<h2 class="col-xs-7">Client List</h2>
-					  		<span class="col-xs-5 text-right cancel-btm"><a href="#" class='addbtn'><i class="fa fa-plus-circle"></i> Add</a></span>
+					  		<h2 class="col-xs-7">Overview</h2>
 					  	</div>
 					 	
 					 	<div class="col-xs-12 links-container links-container2 links-container3">
 									
 							<form>
-								
-								<span class="filter-label">
-									
-									Filter By:
 
-								</span>
-								
-								<ul class="list-inline filter-list">
+								<ul class="list-inline filter-list filter-list-dash">
 
 									<li>
 										
+										Reporting Period:
+
 										<select name="" id="" class='form-control line-select'>
 											
-											<option value="">All</option>
+											<option value="">Last 30 days</option>
+
+										</select>
+
+									</li>
+
+									<li>
+										
+										Logs:
+
+										<select name="" id="" class='form-control line-select'>
+											
+											<option value="">Last 30 days</option>
 
 										</select>
 
@@ -153,7 +155,23 @@
 									
 									<li>
 										
-										<button type="button" class="btn btn-success button-filter">Filter</button>
+										Start:
+
+										<input type="text" class='datepicker'>
+
+									</li>
+
+									<li>
+										
+										End:
+
+										<input type="text" class='datepicker'>
+
+									</li>
+
+									<li>
+										
+										<button type="button" class="btn btn-success button-filter">Update</button>
 
 									</li>
 
@@ -164,67 +182,36 @@
 						</div>
 
 					  	<div class="panel-body panel-body-adjust">
-							<form class="form-horizontal " role="form">
-								<table id="example" class="stripe" cellspacing="0" width="100%">
-								    <thead>
-								        <tr>
-								            <th>Client Name</th>
-								            <th>Contact Person</th>
-								            <th>Email</th>
-								            <th>Status</th>
-								            <th>&nbsp;</th>
-								        </tr>
-								    </thead>
-								 
-								    <tbody>
-
-								        <tr>
-
-								            <td>Globe Telecom</td>
-								            <td>Contact Person</td>
-								            <td>jdcruz@globe.com.ph</td>
-								            <td>Active</td>
-								            <td class='tablelink'>
-								            	
-								            	<a href="#">View</a> | <a href="#">Edit</a> | <a href="#">Delete</a>
-
-								            </td>
-
-								        </tr>
-
-								        <tr>
-
-								            <td>Yondu</td>
-								            <td>Contact Person</td>
-								            <td>jdcruz@globe.com.ph</td>
-								            <td>Active</td>
-								            <td class='tablelink'>
-								            	
-								            	<a href="#">View</a> | <a href="#">Edit</a> | <a href="#">Delete</a>
-
-								            </td>
-
-								        </tr>
-										
-										<tr>
-
-								            <td>Globe Telecom</td>
-								            <td>Contact Person</td>
-								            <td>jdcruz@globe.com.ph</td>
-								            <td>Active</td>
-								            <td class='tablelink'>
-								            	
-								            	<a href="#">View</a> | <a href="#">Edit</a> | <a href="#">Delete</a>
-
-								            </td>
-
-								        </tr>
-
-								    </tbody>
-
-								</table>
-							</form>
+							 <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 					  	</div>
+
+					</div>
+
+					<div class="panel panel-default panel-dafault2">
+						<div class="panel-heading">
+					  		<h2 class="col-xs-7">Notifications</h2>
+					  	</div>
+
+					  	<div class="panel-body panel-body-adjust panel-body-no-margin">
+							
+							<table class="table">
+								<tr>
+									<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis congue risus. </td>
+									<td><a href="#">View</a></td>
+								</tr>
+								<tr>
+									<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis congue risus. </td>
+									<td><a href="#">View</a></td>
+								</tr>
+								<tr>
+									<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis congue risus. </td>
+									<td><a href="#">View</a></td>
+								</tr>
+							</table>
+
+
+					  	</div>
+
 					</div>
 	    		</div>
 	    	</div>
@@ -257,11 +244,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery.dataTables.min.js"></script>
-	
+	 <script src="../js/highcharts.js"></script>
+    <script src="../js/exporting.js"></script>
 
 	<script>
 
 		$(document).ready(function(e){
+
+			$( ".datepicker" ).datepicker();
 
 
 			$('#example').dataTable({
@@ -275,6 +265,36 @@
 			    "bInfo": true,
 			    "bAutoWidth": true
 			});
+
+			  $('#container').highcharts({
+                chart: {
+                    type: 'line'
+                },
+                title: {
+                    text: ''
+                },
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                },
+                yAxis: {
+                    title: {
+                        text: 'Temperature (°C)'
+                    }
+                },
+                plotOptions: {
+                    line: {
+                        dataLabels: {
+                            enabled: true
+                        },
+                        enableMouseTracking: false
+                    }
+                },
+                series: [{
+                	showInLegend: false,  
+                    name: 'Tokyo',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+                }]
+            });
 
 		});
 

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Help Desk | Add Client</title>
+	
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../font-awesome-4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/jquery.dataTables.min.css">
+
+	<!-- Custom Bootstrap -->
+	<link rel="stylesheet" href="../css/sub-style.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+<div class="container-fluid container-adjustment">
+
+	
+	<!-- Navigation -->
+    <nav class="navbar navbar-inverse" role="navigation">
+
+    	<div class="fix-width">
+      <!-- <div class="container"> -->
+        <div class="navbar-header">
+         
+          <a class="navbar-brand" href="#">
+			<img src="../images/helpdesk-logo.png" alt="Help Desk we are ready to help">
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav pull-right">
+            <li class="active hero"><a href="#">Dashboard</a></li>
+
+            <li><a class="hover-animate" href="#about">SLA</a></li>
+            <li><a class="hover-animate" href="#contact">Request</a></li>
+            <li><a class="hover-animate" href="#contact">Group</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle main-circle" data-toggle="dropdown"><span class="circle"><i class="hover-animate fa fa-user"></i></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#" class="hover-animate">My Profile</a></li>
+                <li><a href="#" class="hover-animate">Settings</a></li>
+                <li><a href="#" class="hover-animate">Logout</a></li>
+       
+              </ul>
+            </li>
+          </ul>
+        </div>
+        </div>
+      <!-- </div> -->
+    </nav>
+
+	<!-- Dashboard -->
+	<section class="dashboard">
+
+		<div class="fix-width">
+	    <!-- <div class="container"> -->
+		    <div class="row sub-dashboard">
+				<ul class="col-md-12 list-inline text-center">
+					<li>
+						<a href="#">
+							<p><i class="icons fa fa-plus-circle"></i></p>
+							<span class="text-icons">Create New User</span>
+
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p><i class="icons fa fa-user-md"></i></p>
+							<span class="text-icons">Manage User</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p><i class="icons fa fa-briefcase"></i></p>
+							<span class="text-icons">Client List</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p><i class="icons fa fa-list-alt"></i></p>
+							<span class="text-icons">Request Overdue</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p><i class="icons fa fa-tasks"></i></p>
+							<span class="text-icons">Request Due Today</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p><i class="icons fa fa-list-ul"></i></p>
+							<span class="text-icons">On - Going Request</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p><i class="icons fa fa-envelope"></i></p>
+							<span class="text-icons">Message</span>
+						</a>
+					</li>
+				</ul>
+		    </div>
+		   </div>
+	    <!-- </div>	 -->
+	</section>
+
+
+    <!-- Content -->
+    <section class="main-content">
+
+    	<div class="fix-width">
+		<!-- <div class="container"> -->
+	    	<div class="row">
+	    		<div>
+					<ol class="breadcrumb">
+					  <li><a href="#">Dashboard</a></li>
+					  <li class="active">Client List</li>
+					</ol>
+	    		</div>
+	    		<div class="row">
+					<div class="panel panel-default panel-dafault2">
+						<div class="panel-heading">
+					  		<h2 class="col-xs-7">Client List</h2>
+					  		<span class="col-xs-5 text-right cancel-btm"><a href="#" class='addbtn'><i class="fa fa-plus-circle"></i> Add</a></span>
+					  	</div>
+					 	
+					 	<div class="col-xs-12 links-container links-container2 links-container3">
+									
+							<form>
+								
+								<span class="filter-label">
+									
+									Filter By:
+
+								</span>
+								
+								<ul class="list-inline filter-list">
+
+									<li>
+										
+										<select name="" id="" class='form-control line-select'>
+											
+											<option value="">All</option>
+
+										</select>
+
+									</li>
+									
+									<li>
+										
+										<button type="button" class="btn btn-success button-filter">Filter</button>
+
+									</li>
+
+								</ul>
+
+							</form>
+					
+						</div>
+
+					  	<div class="panel-body panel-body-adjust">
+							<form class="form-horizontal " role="form">
+								<table id="example" class="stripe" cellspacing="0" width="100%">
+								    <thead>
+								        <tr>
+								            <th>Client Name</th>
+								            <th>Contact Person</th>
+								            <th>Email</th>
+								            <th>Status</th>
+								            <th>&nbsp;</th>
+								        </tr>
+								    </thead>
+								 
+								    <tbody>
+
+								        <tr>
+
+								            <td>Globe Telecom</td>
+								            <td>Contact Person</td>
+								            <td>jdcruz@globe.com.ph</td>
+								            <td>Active</td>
+								            <td class='tablelink'>
+								            	
+								            	<a href="#">View</a> | <a href="#">Edit</a> | <a href="#">Delete</a>
+
+								            </td>
+
+								        </tr>
+
+								        <tr>
+
+								            <td>Yondu</td>
+								            <td>Contact Person</td>
+								            <td>jdcruz@globe.com.ph</td>
+								            <td>Active</td>
+								            <td class='tablelink'>
+								            	
+								            	<a href="#">View</a> | <a href="#">Edit</a> | <a href="#">Delete</a>
+
+								            </td>
+
+								        </tr>
+										
+										<tr>
+
+								            <td>Globe Telecom</td>
+								            <td>Contact Person</td>
+								            <td>jdcruz@globe.com.ph</td>
+								            <td>Active</td>
+								            <td class='tablelink'>
+								            	
+								            	<a href="#">View</a> | <a href="#">Edit</a> | <a href="#">Delete</a>
+
+								            </td>
+
+								        </tr>
+
+								    </tbody>
+
+								</table>
+							</form>
+					  	</div>
+					</div>
+	    		</div>
+	    	</div>
+	    </div>
+	   <!--  </div> -->
+    </section>
+    
+
+	<footer>
+		<div class="fix-width">
+		<!-- <div class="container"> -->
+			<div class="row">
+				<div class="col-md-7 sub-footer">
+					<p>Copyright 2009 Ortigas &</p>
+					<p>Company, Limited Partnership. All</p>
+					<p>Right Reserved</p>
+				</div>
+				<div class="col-md-5 address">
+					<p>Contact: 9th Floor, Ortigas Building Avenue, Pasig City 1600 Philippines</p>
+					<p>Phone: (632) 631 1231 Telefax: (632) 631 6517</p>
+					<p>Email: info@ortigas.com.ph</p>
+				</div>
+			</div>
+		<!-- </div> -->
+		</div>
+	</footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.dataTables.min.js"></script>
+	
+
+	<script>
+
+		$(document).ready(function(e){
+
+
+			$('#example').dataTable({
+
+				"aoColumnDefs": [
+			          { 'bSortable': false, 'aTargets': [ -1] }
+			       ]
+			});
+
+		});
+
+	</script>
+
+   </div>
+</body>
+</html>

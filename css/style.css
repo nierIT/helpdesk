@@ -132,7 +132,7 @@
 .add-cancel-list a:hover,
 .tablelink a:hover{
 	text-decoration: none;
-	color: #0C0C0C;
+	color: #590259;
 }
 
 .request-form-table{
@@ -340,4 +340,29 @@
 
 .button-filter{
 	padding: 6px 18px;
+}
+
+.links-container2{
+	padding: 20px 0 13px 30px;
+}
+
+.addbtn{
+	font-size: 14px!important; 
+}
+
+.panel-body-adjust{
+	margin-top: 85px;	
+	margin-right: 30px;
+}
+
+.links-container3{
+	padding: 20px 0 13px 45px;
+}
+
+.panel-dafault2{
+	padding: 0 0 30px 0;
+}
+
+.modal-btn{
+	cursor: pointer;
 }

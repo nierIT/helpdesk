@@ -282,13 +282,8 @@ footer {
 	font-size: 13px;
 }
 
-.cancel-btm {
-	margin-top: 23px;
-
-}
 
 .cancel-btm a{
-
 	font-size: 13px;
 	color: #333;
 }
@@ -301,14 +296,16 @@ footer {
 .form-group {
 	margin-bottom: 30px;
 }
+
+.form-group label {
+    font-size: 13px;
+}
 .panel-body {
 	margin-left: 30px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
-.form-control {
-	border-radius: 0;
-}
+
 .form-control:focus {
 	border-color: #333;
 }
@@ -324,15 +321,12 @@ footer {
 
 .btn-primary:hover {
 	background-color: #555;
-	
-
 }
 
 .btn {
 	padding-left: 30px;
 	padding-right: 30px;
 	border:none;
-	border-radius: 0;
 }
 
 .control-label {
@@ -352,3 +346,104 @@ footer {
 .well {
 	color: #333;
 }
+
+.panel-heading i {
+    margin-right: 5px;
+}
+
+.list-group {
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.sla-list > li.list-group-item {
+    border-color: transparent;
+    border-radius: 0;
+    border-top-color: #ddd;
+    padding-left: 40px;
+}
+
+.list-group-item > h4 {
+    font-size: 14px;
+    
+        
+   
+}
+
+.sla-list .list-group-item:first-child {
+    border-top-color: transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-bottom: 25px;
+
+    
+}
+
+
+.sla-list .list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-color: #ddd;
+    margin-bottom: 50px;
+
+}
+.sub-list-category > li + li:before {
+    content: "| ";
+    margin-right: 10px;
+}
+
+.sub-list-category > li > a {
+    color: #333;
+}
+
+.setting-list li {
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #333;
+    border-color: #333;
+}
+
+.setting-list > li.list-group-item {
+    border-color: transparent;
+    border-top-color: #ddd;
+}
+
+.setting-list .list-group-item:first-child {
+    border-top-color: transparent; 
+}
+
+.setting-list .list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-color: #ddd;
+}
+
+.setting-list .list-group-item:last-child { 
+    margin-bottom: 50px;
+}
+
+.setting-list .control-label {
+    line-height: 35px; 
+}    
+
+.setting-list .checkbox {
+    margin-top: 5px;
+}
+
+.setting-list-btn button:last-child{
+    margin-left: 10px;
+}
+
+.sub-setting-input {
+    margin-bottom: 30px;
+}
+
+.sub-setting-list {
+    margin-bottom: 0px;
+}
+    
